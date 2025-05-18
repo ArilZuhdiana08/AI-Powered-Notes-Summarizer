@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Notes Summarizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ringkas Teks dengan AI</h1>
+        <form method="post">
+            <textarea name="text" placeholder="Tempel teks di sini..." rows="10" cols="80"></textarea><br>
+            <button type="submit">Ringkas</button>
+        </form>
+        {% if summary %}
+            <h2>Hasil Ringkasan:</h2>
+            <p>{{ summary }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
